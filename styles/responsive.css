@@ -1,0 +1,199 @@
+/* Mobile */
+@media screen and (max-width: 576px) {
+    .container{
+        max-width: 100%;
+        padding: 0 1.25rem !important;
+    }
+    header{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .header-notification{
+        height: unset;
+        padding: 1.25rem;
+        flex-direction: column;
+    }
+    .logo{
+        height: 40px;
+    }
+    .logo img{
+        height: 100%;
+    }
+    .hero-section{
+        padding: 2rem 0 !important;
+    }
+    .search-wrapper{
+        padding: 2.25rem 1.5rem;
+    }
+    .search-form{
+        flex-direction: column !important;
+    }
+    .search-wrapper-title{
+        align-items: flex-start;
+    }
+    .search-wrapper-title h1{
+        font-size: 1rem;
+        line-height: 1.35;
+    }
+    .form-fields{
+        grid-template-columns: repeat(1, 1fr) !important;
+        gap: 1rem !important;
+    }
+    .form-field-wrapper{
+        padding: 0 0 1rem !important;
+        border-right: 0 !important;
+        border-bottom: 1px solid var(--border-color) !important;
+    }
+    #partnersSwiper{
+        margin: 0 -1rem;
+    }
+    .partner-slide img{
+        width: 100%;
+    }
+    .services-wrapper{
+        padding: 1.5rem;
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+    .references-wrapper{
+        flex-direction: column;
+        gap: 4rem;
+    }
+    .reference{
+        width: 100% !important;
+        height: unset;
+        justify-content: center;
+    }
+    .founder-note-wrapper{
+        padding: 1.25rem;
+        flex-direction: column;
+    }
+    .founder-image{
+        width: 100%;
+        height: 320px;
+    }
+    .founder-note-content{
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    .help-box{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .help-content{
+        width: 100% !important;
+    }
+    .footer-wrapper, .footer-links{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-links{
+        gap: 1rem;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 991px) {
+    .container{
+        max-width: 100%;
+        padding: 0 1.5rem;
+    }
+    section{
+        padding: 50px 0;
+    }
+    .hamburger-menu{
+        display: flex;
+    }
+    .nav-actions{
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        background: #fff;
+        border-bottom-left-radius: 2rem;
+        border-bottom-right-radius: 2rem;
+        box-shadow: 0 4px 4px rgba(0,0,0,0.02);
+        padding: 1.5rem;
+        display: none;
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+        margin: 0 -1.5rem;
+    }
+    .nav-actions.open-menu{
+        display: flex;
+    }
+    .nav-actions.open-menu button{
+        background-color: transparent;
+        padding: 0;
+        color: var(--text-color);
+    }
+    .nav-actions.open-menu .country-dropdown .country-dropdown-trigger a{
+        background-color: transparent;
+        border: 0;
+        padding-block: 0;
+    }
+    .nav-actions.open-menu .country-dropdown-list{
+        position: inherit;
+        background-color: transparent;
+        box-shadow: none;
+        margin-top: 1rem;
+    }
+    .hero-section{
+        height: unset;
+        padding: 2.5rem 1.5rem;
+    }
+    .search-wrapper-title{
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .search-form{
+        padding: 1.5rem;
+        flex-direction: column;
+        gap: 2rem;
+        margin-bottom: 1.5rem;
+    }
+    .form-fields{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+    .search-form-actions{
+        width: 100%;
+        justify-content: stretch;
+    }
+    .search-form-actions button{
+        width: 100%;
+    }
+    .services-wrapper{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .references-wrapper{
+        gap: 3rem 0;
+    }
+    .reference{
+        width: 50%;
+        justify-content: center;
+    }
+    .help-content{
+        width: 65%;
+        flex: unset;
+    }
+    .help-actions{
+        flex: 1;
+    }
+    .help-actions button{
+        width: 100%;
+    }    
+    .footer-wrapper{
+        padding: 2rem 0;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .copyrights{
+        justify-content: flex-start;
+    }    
+}
+
+@media screen and (min-width: 600px) and (max-width: 991px){
+    .form-field-wrapper:nth-child(3n){
+        border-right: 0;
+        padding-right: 0;
+    }
+}

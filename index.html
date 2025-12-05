@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portugal Cab</title>
+    <meta name="description" content="Portugal Cab - Your reliable cab service in Portugal.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-notification">
+            <p><span>VIP service</span> with real human support <span>24/7</span></p>
+            <a href="https://wa.me/351236218999" target="_blank" class="button x-small">WhatsApp +351 236 218 999</a>
+        </div>
+        <!-- Navigation -->
+        <nav>
+            <div class="container">
+                <div class="navigation">
+                    <a href="javascript:void(0)" class="logo">
+                        <img src="./assets/logo.svg" alt="Portugal Cab" />
+                    </a>
+                    <div class="hamburger-menu">
+                        <span class="top"></span>
+                        <span class="middle"></span>
+                        <span class="bottom"></span>
+                    </div>
+                    <div class="nav-actions">
+                        <div class="country-dropdown">
+                            <div class="country-dropdown-trigger">
+                                <a href="javascript:void(0)">
+                                    <img class="country-flag" src="./assets/pt.svg" alt="Brazil" />
+                                    <span class="country-name">PT</span>
+                                </a>
+                            </div>
+                            <div class="country-dropdown-list">
+                                <a href="javascript:void(0)">
+                                    <img class="country-flag" src="./assets/pt.svg" alt="Brazil" />
+                                    <span class="country-name">PT</span>
+                                </a>
+                                <a href="javascript:void(0)">
+                                    <img class="country-flag" src="./assets/uk.svg" alt="UK" />
+                                    <span class="country-name">EN</span>
+                                </a>
+                            </div>
+                        </div>
+                        <button class="button small">Manage Booking</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="search-wrapper">
+                <div class="search-wrapper-title">
+                    <h1>Your Trusted Car Rental Expert in Portugal</h1>
+                    <a href="javascript:void(0)">Need help?</a>
+                </div>
+                <form action="" class="search-form">
+                    <div class="form-fields">
+                        <div class="form-field-wrapper">
+                            <label for="pickUpLocation">Pick Up Location</label>
+                            <div class="form-field">
+                                <span class="form-field-icon">
+                                    <img src="./assets/pin.svg" alt="location" />
+                                </span>
+                                <select name="pickUpLocation" id="pickUpLocation">
+                                    <option value="lisbon">Lisbon Airport</option>
+                                    <option value="porto">Porto Airport</option>
+                                    <option value="farol">Farol Airport</option>
+                                    <option value="faro">Faro Airport</option>
+                                    <option value="madeira">Madeira Airport</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-field-wrapper">
+                            <label for="pickUpDate">Pick Up Date</label>
+                            <div class="form-field">
+                                <span class="form-field-icon">
+                                    <img src="./assets/calendar.svg" alt="calendar" />
+                                </span>
+                                <input type="date" name="pickUpDate" id="pickUpDate" />
+                            </div>
+                        </div>
+                        <div class="form-field-wrapper">
+                            <label for="pickUpTime">Pick Up Time</label>
+                            <div class="form-field">
+                                <span class="form-field-icon">
+                                    <img src="./assets/clock.svg" alt="clock" />
+                                </span>
+                                <input type="time" name="pickUpTime" id="pickUpTime" />
+                            </div>
+                        </div>
+                        <div class="form-field-wrapper">
+                            <label for="dropOffLocation">Drop Off Location</label>
+                            <div class="form-field">
+                                <span class="form-field-icon">
+                                    <img src="./assets/pin.svg" alt="location" />
+                                </span>
+                                <select name="dropOffLocation" id="dropOffLocation">
+                                    <option value="lisbon">Lisbon Airport</option>
+                                    <option value="porto">Porto Airport</option>
+                                    <option value="farol">Farol Airport</option>
+                                    <option value="faro">Faro Airport</option>
+                                    <option value="madeira">Madeira Airport</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-field-wrapper">
+                            <label for="returnDate">Return Date</label>
+                            <div class="form-field">
+                                <span class="form-field-icon">
+                                    <img src="./assets/calendar.svg" alt="calendar" />
+                                </span>
+                                <input type="date" name="returnDate" id="returnDate" />
+                            </div>
+                        </div>
+                        <div class="form-field-wrapper">
+                            <label for="returnTime">Return Time</label>
+                            <div class="form-field">
+                                <span class="form-field-icon">
+                                    <img src="./assets/clock.svg" alt="clock" />
+                                </span>
+                                <input type="time" name="returnTime" id="returnTime" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-form-actions">
+                        <button class="button large">Find a Car</button>
+                    </div>
+                </form>
+                <div class="search-note">
+                    <p>Driver between 25 to 75 year old age?</p>
+                    <div id="ageCondition">
+                        <input type="checkbox" id="age" checked />
+                        <label for="age"></label>
+                    </div>
+                </div>
+                <div class="age-selection">
+                    <label for="ageSelection">Age</label>
+                    <input type="number" name="ageSelection" id="ageSelection" value="18" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services-->
+    <section>
+        <div class="container">
+            <h2 class="section-title">What's Included</h2>
+            <div class="services-wrapper">
+                <div class="service">
+                    <div class="service-icon"><img src="./assets/damage.svg" alt="Collision Damage Waiver"></div>
+                    <p>Collision Damage Waiver</p>
+                </div>
+                <div class="service">
+                    <div class="service-icon"><img src="./assets/location.svg" alt="Premium Location / Airport Fee">
+                    </div>
+                    <p>Premium Location / Airport Fee</p>
+                </div>
+                <div class="service">
+                    <div class="service-icon"><img src="./assets/mileage.svg" alt="Unlimited Mileage"></div>
+                    <p>Unlimited Mileage</p>
+                </div>
+                <div class="service">
+                    <div class="service-icon"><img src="./assets/theft.svg" alt="Vehicle Theft Waiver"></div>
+                    <p>Vehicle Theft Waiver</p>
+                </div>
+                <div class="service">
+                    <div class="service-icon"><img src="./assets/local_tax.svg" alt="VAT Local Tax"></div>
+                    <p>VAT Local Tax</p>
+                </div>
+                <div class="service">
+                    <div class="service-icon"><img src="./assets/road_assistance.svg" alt="24-Hour Raod Assistance">
+                    </div>
+                    <p>24-Hour Raod Assistance</p>
+                </div>
+                <div class="service">
+                    <div class="service-icon"><img src="./assets/liability_insurance.svg" alt="Liability Insurance">
+                    </div>
+                    <p>Liability Insurance</p>
+                </div>
+                <div class="service">
+                    <div class="service-icon"><img src="./assets/rft.svg" alt="Road Fund Tax (RFT)"></div>
+                    <p>Road Fund Tax (RFT)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Our Partners</h2>
+            <div class="swiper" id="partnersSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="partner-slide">
+                            <img src="./assets/partners/Guerin.svg" alt="Guerin" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-slide">
+                            <img src="./assets/partners/Europcar.svg" alt="Europcar" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-slide">
+                            <img src="./assets/partners/Drivalia.svg" alt="Drivalia" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-slide">
+                            <img src="./assets/partners/Movida.svg" alt="Movida" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-slide">
+                            <img src="./assets/partners/Avis.svg" alt="AVIS" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-slide">
+                            <img src="./assets/partners/Ilha_Verde.svg" alt="Ilha Verde Rent a Car" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-slide">
+                            <img src="./assets/partners/Sixt.svg" alt="Sixt" />
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="partner-slide">
+                            <img src="./assets/partners/Tangerine.svg" alt="Tangerine Rent-a-Car" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="swiper" id="testimonialsSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <div class="rating-stars">
+                                <img src="./assets/star.svg" alt="Star" />
+                                <img src="./assets/star.svg" alt="Star" />
+                                <img src="./assets/star.svg" alt="Star" />
+                                <img src="./assets/star.svg" alt="Star" />
+                                <img src="./assets/star_unfilled.svg" alt="Star" />
+                            </div>
+                            <p class="testimony">“Great service and clean car, super smooth
+                                experience!” </p>
+                            <p class="testimony-by">Maria S.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <div class="rating-stars">
+                                <img src="./assets/star.svg" alt="Star" />
+                                <img src="./assets/star.svg" alt="Star" />
+                                <img src="./assets/star.svg" alt="Star" />
+                                <img src="./assets/star.svg" alt="Star" />
+                                <img src="./assets/star.svg" alt="Star" />
+                            </div>
+                            <p class="testimony">“Fast pickup, no issues at all. Highly recommended!”</p>
+                            <p class="testimony-by">Daniel R.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <div class="rating-stars">
+                                <img src="./assets/star.svg" alt="Star" />
+                                <img src="./assets/star.svg" alt="Star" />
+                                <img src="./assets/star.svg" alt="Star" />
+                                <img src="./assets/star.svg" alt="Star" />
+                                <img src="./assets/star.svg" alt="Star" />
+                            </div>
+                            <p class="testimony">“Best rental prices and very friendly staff!”</p>
+                            <p class="testimony-by">Priya M.</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testimonial">
+                            <div class="rating-stars">
+                                <img src="./assets/star.svg" alt="Star" />
+                                <img src="./assets/star.svg" alt="Star" />
+                                <img src="./assets/star_unfilled.svg" alt="Star" />
+                                <img src="./assets/star_unfilled.svg" alt="Star" />
+                                <img src="./assets/star_unfilled.svg" alt="Star" />
+                            </div>
+                            <p class="testimony">“Great service and clean car, super smooth
+                                experience!” </p>
+                            <p class="testimony-by">Saikat P.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination" id="testimonialSwiperPagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- References -->
+    <section>
+        <div class="container">
+            <div class="references-wrapper">
+                <div class="reference"><img src="./assets/tripadvisor.svg" alt="Tripadvisor" /></div>
+                <div class="reference"><img src="./assets/google.svg" alt="Google" /></div>
+                <div class="reference"><img src="./assets/trustpilot.svg" alt="Trustpilot" /></div>
+                <div class="reference"><img src="./assets/la_times.svg" alt="Los Angeles Times" /></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Founder Note -->
+    <section>
+        <div class="container">
+            <div class="founder-note-wrapper">
+                <div class="founder-image">
+                    <img src="./assets/founder.png" alt="Carlos Silva" />
+                </div>
+                <div class="founder-note-content">
+                    <h2>Founder's Note</h2>
+                    <p>“For me, mobility is about connection — between people, countries, and cultures.
+                        Portugal-Auto-Rentals exists to make that connection seamless, trustworthy, and inspiring.”</p>
+                    <div class="founder-info">
+                        <h3>Carlos Silva</h3>
+                        <p>Founder & Global Car Rental Expert</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help -->
+    <section>
+        <div class="container">
+            <div class="help-box">
+                <div class="help-content">
+                    <h2>Need help now?</h2>
+                    <p>Contact our team via WhatsApp or phone for fast, personal assistance with your car rental
+                        booking.</p>
+                </div>
+                <div class="help-actions">
+                    <a href="https://wa.me/351236218999" target="_blank" class="button large">WhatsApp us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-logo">
+                    <img src="./assets/logo.svg" alt="Portugal Cab" />
+                </div>
+                <div class="footer-links">
+                    <a href="javascript:void(0)">Blog</a>
+                    <a href="javascript:void(0)">About us</a>
+                    <a href="javascript:void(0)">Contact us</a>
+                    <a href="javascript:void(0)">FAQs</a>
+                    <a href="javascript:void(0)">Terms & Conditions</a>
+                </div>
+                <div class="social-links">
+                    <a href="javascript:void(0)" class="social-link">
+                        <img src="./assets/social_media/instagram.svg" alt="Instagram" />
+                    </a>
+                    <a href="javascript:void(0)" class="social-link">
+                        <img src="./assets/social_media/tiktok.svg" alt="Tiktok" />
+                    </a>
+                    <a href="javascript:void(0)" class="social-link">
+                        <img src="./assets/social_media/facebook.svg" alt="Facebook" />
+                    </a>
+                    <a href="javascript:void(0)" class="social-link">
+                        <img src="./assets/social_media/youtube.svg" alt="YouTube" />
+                    </a>
+                    <a href="javascript:void(0)" class="social-link">
+                        <img src="./assets/social_media/x.svg" alt="X">
+                    </a>
+                    <a href="javascript:void(0)" class="social-link">
+                        <img src="./assets/social_media/linkedin.svg" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+            <div class="copyrights">
+                <p>© <span id="currentYear"></span> Portugal Auto Rentals. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" async defer></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript" async
+        defer></script>
+
+    <!-- Misc -->
+    <script>
+        $(document).ready(function () {
+            $('.hamburger-menu').click(function () {
+                $(this).toggleClass('clicked')
+                $('.nav-actions').toggleClass('open-menu')
+            })
+
+            $('#ageCondition input[type="checkbox"]').change(function () {
+                if ($(this).is(':checked')) {
+                    $('.age-selection').css('display', 'none')
+                }
+                else {
+                    $('.age-selection').css('display', 'flex')
+                }
+            })
+
+            $('#currentYear').text(new Date().getFullYear());
+        })
+    </script>
+
+    <!-- Swipers -->
+    <script>
+        const testimonialsSwiper = new Swiper('#testimonialsSwiper', {
+            spaceBetween: 24,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            pagination: {
+                el: "#testimonialSwiperPagination",
+                clickable: true,
+            },
+            breakpoints: {
+                250: {
+                    slidesPerView: 1
+                },
+                768: {
+                    slidesPerView: 1.75
+                },
+                1300: {
+                    slidesPerView: 2.75,
+                }
+            },
+        });
+        const partnersSwiper = new Swiper('#partnersSwiper', {
+            loop: true,
+            spaceBetween: 24,
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false,
+            },
+            breakpoints: {
+                250: {
+                    slidesPerView: 3,
+                    spaceBetween: 16,
+                },
+                768: {
+                    slidesPerView: 3.5
+                },
+                1300: {
+                    slidesPerView: 5.5
+                }
+            },
+        });
+    </script>
+
+    <!-- Country Dropdown script -->
+    <script>
+
+        const langMap = {
+            PT: 'pt',   // Brazil → Portuguese
+            IN: 'hi',   // India → Hindi
+            UK: 'en',   // USA → English
+        };
+
+        $(".country-dropdown-trigger a").click(function () {
+            $(".country-dropdown-list").toggle();
+        });
+
+        $(".country-dropdown-list a").click(function () {
+            const imgSrc = $(this).find('.country-flag').attr('src');
+            const countryName = $(this).find('.country-name').text().trim();
+
+            $(".country-dropdown-trigger a").find('.country-flag').attr('src', imgSrc)
+            $(".country-dropdown-trigger a").find('.country-name').html(countryName)
+
+            $(".country-dropdown-list").hide();
+
+            const langCode = langMap[countryName] || 'en';
+
+            $('html').attr('lang', langCode);
+        });
+
+        $(document).bind('click', function (e) {
+            var $clicked = $(e.target);
+            if (!$clicked.parents().hasClass("country-dropdown"))
+                $(".country-dropdown-list").hide();
+        });
+
+    </script>
+</body>
+
+</html>
